@@ -1,5 +1,4 @@
-from selenium.webdriver.common.by import By
-import time;
+import time
 from Config.Environment import Enviroment
 from Pages.CreateAccountPage import CreateAccount
 from Pages.HomePage import HomePage
@@ -20,9 +19,9 @@ class TestRegister(Enviroment):
         lp.clickSignin()
         #    3. Input email address into Email address field .
         #    4. Click on create an account button.
-        at.enterCreateEmailField("Tuanbui"+str(int(round(time.time() * 1000)))+"@gmail.com")
+        at.enterCreateEmailField("Tuanbui"+str(int(round(time.time())))+"@gmail.com")
         at.clickCreateButton()
         #    5. Fill all personal information.
         #    6. Click on register button.
         ct.CreateAccountFlow(rd.randomString(8), rd.randomString(8), rd.randomString(8), rd.randomString(5), rd.randomString(6), rd.randomString(6),  rd.randomString(6),  rd.randomString(6),
-                             rd.randomString(6), "12345",  rd.randomString(6), "0909090909",  rd.randomString(6))
+                             rd.randomString(6), rd.randomNumber1(5,"0123456789"),  rd.randomString(6), rd.randomNumber1(10,"0123456789"),  rd.randomString(6))

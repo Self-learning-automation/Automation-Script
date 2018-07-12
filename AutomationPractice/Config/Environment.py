@@ -12,6 +12,7 @@ class Enviroment(unittest.TestCase):
         opts.add_experimental_option("detach", True)
         self.driver = webdriver.Chrome(locationdriver, chrome_options=opts)
         self.driver.implicitly_wait(10)
-        self.driver.maximize_window()
-#    def teardown(self):
-#        self.driver.close()
+        self.driverdriver.maximize_window()
+
+    def teardown(self):
+        self.driver.quit()

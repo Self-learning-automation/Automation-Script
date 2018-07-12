@@ -10,3 +10,8 @@ class Random():
     def randomNumber(self,min,max):
         ranNum = random.randint(min,max)
         return ranNum
+    def randomNumber1(self,length,chars):
+        string = []
+        for i in range(length):
+            string.append(random.choice(chars))
+        return ''.join(string)
