@@ -1,0 +1,16 @@
+*junitResults/
+*.pyc
+*.swp
+*.swo
+
+bin/
+target/
+
+.Python
+
+*.manifest
+*.spec
+
+.idea
+.bundle/
+
