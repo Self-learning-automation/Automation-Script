@@ -12,4 +12,4 @@ Feature: User register functionality
     Then Verify User register successfully
     Examples:
     |email_address|
-    |Tuanbuikfdjkfdddddddddaa@gmail.com|
+    |Tuanbuikfdjkfddddsdsdddddddaa@gmail.com|

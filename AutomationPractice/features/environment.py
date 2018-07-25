@@ -6,8 +6,8 @@ from features.Pages.CreateAccountPage import CreateAccount
 
 
 def init_browser_session(context):
-     context.browser = Browser().make_browser()
-     return context
+    context.browser = Browser().make_browser()
+    return context
 
 
 def before_scenario(context, scenario):
@@ -17,5 +17,5 @@ def before_scenario(context, scenario):
     context.createaccount_page = CreateAccount(context.browser)
 
 
-#def after_scenario(context, scenario):
-#    context.browser.quit()
+def after_scenario(context, scenario):
+    context.browser.quit()
