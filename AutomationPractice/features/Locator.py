@@ -21,7 +21,7 @@ caa_btn = (By.CSS_SELECTOR, 'button#SubmitCreate')
 
 # Locator of Create Account Page
 gender_male = (By.CSS_SELECTOR, 'input#id_gender1')
-genter_femaile = (By.CSS_SELECTOR, 'input#id_gender2')
+gender_female = (By.CSS_SELECTOR, 'input#id_gender2')
 firstname_field = (By.CSS_SELECTOR, 'input#customer_firstname')
 lastname_filed = (By.CSS_SELECTOR, 'input#customer_lastname')
 password_field = (By.CSS_SELECTOR, 'input#passwd')

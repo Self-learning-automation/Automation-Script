@@ -1,4 +1,3 @@
-from selenium import webdriver
 from features.browsers.browser import Browser
 from features.Pages.HomePage import HomePage
 from features.Pages.AuthencationPage import Authencation
